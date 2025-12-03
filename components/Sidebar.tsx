@@ -25,6 +25,9 @@ const Sidebar: React.FC<SidebarProps> = ({ activeView, onNavigate }) => {
             src="https://i.ibb.co/9k4sR4V9/image.png" 
             alt="Bupa Logo" 
             className="w-full h-full object-contain"
+            onError={(e) => {
+              e.currentTarget.src = "https://via.placeholder.com/150?text=Bupa";
+            }}
           />
         </div>
         <span className="ml-3 font-bold text-lg hidden lg:block text-slate-100 tracking-tight">UX Hub</span>
